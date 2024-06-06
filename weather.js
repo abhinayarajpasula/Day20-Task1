@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function getWeather(city) {
         const apiKey = '9ffb80031b142175f1ea0efdb135543c'; // Provided API key
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
